@@ -30,8 +30,8 @@
             <objects>
                 <viewController storyboardIdentifier="MainMenu" title="MainMenu" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="MainMenu" customModule="PhotoExpresso" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="1uw-lD-dnP"/>
-                        <viewControllerLayoutGuide type="bottom" id="yud-Sg-pKE"/>
+                        <viewControllerLayoutGuide type="top" id="p44-nG-j9N"/>
+                        <viewControllerLayoutGuide type="bottom" id="RDd-Ja-bS0"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -39,22 +39,34 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4ET-7F-xRc">
                                 <rect key="frame" x="16" y="72" width="343" height="269"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="cameraButton" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPF-pC-dgW">
-                                <rect key="frame" x="16" y="383" width="343" height="50"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPF-pC-dgW">
+                                <rect key="frame" x="16" y="349" width="343" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                 <state key="normal" title="Camera"/>
                                 <connections>
-                                    <action selector="loadNewImageButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="npe-7s-aom"/>
+                                    <action selector="loadNewImageButton:" destination="BYZ-38-t0r" eventType="touchDown" id="JQx-ic-SBT"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="galleryButton" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J5C-b0-gj8">
-                                <rect key="frame" x="16" y="441" width="343" height="50"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J5C-b0-gj8">
+                                <rect key="frame" x="16" y="424" width="343" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                 <state key="normal" title="Image Gallery"/>
                                 <connections>
-                                    <action selector="loadImageButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZJz-fx-gYM"/>
+                                    <action selector="loadImageButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iK9-fW-sct"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSn-bw-kii">
+                                <rect key="frame" x="16" y="499" width="343" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                <state key="normal" title="Validate"/>
+                                <connections>
+                                    <action selector="validateImage:" destination="BYZ-38-t0r" eventType="touchDown" id="Gax-6g-oQ8"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -69,34 +81,97 @@
             </objects>
             <point key="canvasLocation" x="68" y="129.08545727136433"/>
         </scene>
-        <!--View Controller-->
+        <!--FilterController-->
         <scene sceneID="L3H-jM-M3D">
             <objects>
-                <viewController id="Qs6-YF-mBB" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FilterController" title="FilterController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Qs6-YF-mBB" customClass="FilterController" customModule="PhotoExpresso" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="qVL-cx-LXg"/>
-                        <viewControllerLayoutGuide type="bottom" id="JVd-VX-zh5"/>
+                        <viewControllerLayoutGuide type="top" id="8eK-nd-bTx"/>
+                        <viewControllerLayoutGuide type="bottom" id="g6P-Xp-OCe"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="pyO-Lz-PyD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r6Z-X0-k32">
+                                <rect key="frame" x="16" y="348" width="343" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                <state key="normal" title="Filter"/>
+                                <connections>
+                                    <action selector="NewFilter:" destination="Qs6-YF-mBB" eventType="touchDown" id="uex-Ha-j9d"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JwW-BS-dsM">
                                 <rect key="frame" x="16" y="72" width="343" height="268"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r6Z-X0-k32">
-                                <rect key="frame" x="16" y="387" width="343" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYX-pV-Dum">
+                                <rect key="frame" x="16" y="406" width="343" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Filter"/>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                <state key="normal" title="Validate"/>
+                                <connections>
+                                    <action selector="validateFilter:" destination="Qs6-YF-mBB" eventType="touchDown" id="sOE-eh-Cce"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="ImageView" destination="JwW-BS-dsM" id="ENL-pe-ggE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VFx-sq-nhx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="717.60000000000002" y="129.98500749625188"/>
+            <point key="canvasLocation" x="794" y="131"/>
+        </scene>
+        <!--FormatController-->
+        <scene sceneID="JCM-Dc-hnx">
+            <objects>
+                <viewController storyboardIdentifier="FormatController" title="FormatController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="m0w-d2-bUG" customClass="FormatController" customModule="PhotoExpresso" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zH3-Ji-YrQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="kCD-Sa-tzR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iMi-2F-a7w">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IU6-P2-ldr">
+                                <rect key="frame" x="16" y="348" width="343" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                <state key="normal" title="Format"/>
+                                <connections>
+                                    <action selector="newFormat:" destination="m0w-d2-bUG" eventType="touchDown" id="RfQ-n6-Mr5"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Hc-oU-82i">
+                                <rect key="frame" x="16" y="72" width="343" height="268"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SG4-fQ-kga">
+                                <rect key="frame" x="16" y="406" width="343" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                <state key="normal" title="Validate"/>
+                                <connections>
+                                    <action selector="validateFormat:" destination="m0w-d2-bUG" eventType="touchDown" id="AOH-fs-4Rk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="ImageView" destination="2Hc-oU-82i" id="tfk-Ub-Dn0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S2r-QY-on7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1455" y="131"/>
         </scene>
     </scenes>
 </document>

@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A7719BC1E44C88100C5A5E1 /* FilterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7719BB1E44C88100C5A5E1 /* FilterController.swift */; };
+		7A9A3AA91E49D6AA00474184 /* FormatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9A3AA81E49D6AA00474184 /* FormatController.swift */; };
 		7ACC35741E43302800F0BB9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACC35731E43302800F0BB9A /* AppDelegate.swift */; };
 		7ACC35761E43302800F0BB9A /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACC35751E43302800F0BB9A /* MainMenu.swift */; };
 		7ACC35791E43302800F0BB9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ACC35771E43302800F0BB9A /* Main.storyboard */; };
 		7ACC357C1E43302800F0BB9A /* PhotoExpresso.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7ACC357A1E43302800F0BB9A /* PhotoExpresso.xcdatamodeld */; };
 		7ACC357E1E43302800F0BB9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ACC357D1E43302800F0BB9A /* Assets.xcassets */; };
-		7ACC35811E43302800F0BB9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ACC357F1E43302800F0BB9A /* LaunchScreen.storyboard */; };
 		7ACC358C1E43302800F0BB9A /* PhotoExpressoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACC358B1E43302800F0BB9A /* PhotoExpressoTests.swift */; };
 		7ACC35971E43302800F0BB9A /* PhotoExpressoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACC35961E43302800F0BB9A /* PhotoExpressoUITests.swift */; };
 /* End PBXBuildFile section */
@@ -35,13 +36,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A7719BB1E44C88100C5A5E1 /* FilterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterController.swift; sourceTree = "<group>"; };
+		7A9A3AA81E49D6AA00474184 /* FormatController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormatController.swift; sourceTree = "<group>"; };
 		7ACC35701E43302800F0BB9A /* PhotoExpresso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoExpresso.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ACC35731E43302800F0BB9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7ACC35751E43302800F0BB9A /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 		7ACC35781E43302800F0BB9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7ACC357B1E43302800F0BB9A /* PhotoExpresso.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PhotoExpresso.xcdatamodel; sourceTree = "<group>"; };
 		7ACC357D1E43302800F0BB9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7ACC35801E43302800F0BB9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7ACC35821E43302800F0BB9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7ACC35871E43302800F0BB9A /* PhotoExpressoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoExpressoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ACC358B1E43302800F0BB9A /* PhotoExpressoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoExpressoTests.swift; sourceTree = "<group>"; };
@@ -101,11 +103,12 @@
 			children = (
 				7ACC35731E43302800F0BB9A /* AppDelegate.swift */,
 				7ACC35751E43302800F0BB9A /* MainMenu.swift */,
+				7A7719BB1E44C88100C5A5E1 /* FilterController.swift */,
 				7ACC35771E43302800F0BB9A /* Main.storyboard */,
 				7ACC357D1E43302800F0BB9A /* Assets.xcassets */,
-				7ACC357F1E43302800F0BB9A /* LaunchScreen.storyboard */,
 				7ACC35821E43302800F0BB9A /* Info.plist */,
 				7ACC357A1E43302800F0BB9A /* PhotoExpresso.xcdatamodeld */,
+				7A9A3AA81E49D6AA00474184 /* FormatController.swift */,
 			);
 			path = PhotoExpresso;
 			sourceTree = "<group>";
@@ -235,7 +238,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7ACC35811E43302800F0BB9A /* LaunchScreen.storyboard in Resources */,
 				7ACC357E1E43302800F0BB9A /* Assets.xcassets in Resources */,
 				7ACC35791E43302800F0BB9A /* Main.storyboard in Resources */,
 			);
@@ -265,6 +267,8 @@
 				7ACC35761E43302800F0BB9A /* MainMenu.swift in Sources */,
 				7ACC35741E43302800F0BB9A /* AppDelegate.swift in Sources */,
 				7ACC357C1E43302800F0BB9A /* PhotoExpresso.xcdatamodeld in Sources */,
+				7A7719BC1E44C88100C5A5E1 /* FilterController.swift in Sources */,
+				7A9A3AA91E49D6AA00474184 /* FormatController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,14 +310,6 @@
 				7ACC35781E43302800F0BB9A /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		7ACC357F1E43302800F0BB9A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7ACC35801E43302800F0BB9A /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -509,6 +505,7 @@
 				7ACC359D1E43302800F0BB9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7ACC359E1E43302800F0BB9A /* Build configuration list for PBXNativeTarget "PhotoExpressoTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +514,7 @@
 				7ACC35A01E43302800F0BB9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7ACC35A11E43302800F0BB9A /* Build configuration list for PBXNativeTarget "PhotoExpressoUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +523,7 @@
 				7ACC35A31E43302800F0BB9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

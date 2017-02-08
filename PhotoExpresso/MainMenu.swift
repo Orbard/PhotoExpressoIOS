@@ -13,21 +13,28 @@ class MainMenu: UIViewController, UIImagePickerControllerDelegate, UINavigationC
     
     @IBOutlet weak var imageView: UIImageView!
     
-    
+
     let imagePicker = UIImagePickerController()
     
+
     @IBAction func loadNewImageButton(_ sender: UIButton) {
         imagePicker.allowsEditing = false
         imagePicker.sourceType = .camera
-        
         present(imagePicker, animated: true, completion: nil)
     }
+    
+    
+    @IBAction func validateImage(_ sender: UIButton) {
+        let vue = self.storyboard?.instantiateViewController(withIdentifier: "FilterController") as! FilterController
+        self.navigationController?.pushViewController(vue, animated: true);
+    }
+
     @IBAction func loadImageButton(_ sender: UIButton) {
         imagePicker.allowsEditing = false
         imagePicker.sourceType = .photoLibrary
-        
         present(imagePicker, animated: true, completion: nil)
     }
+
     
     private func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
